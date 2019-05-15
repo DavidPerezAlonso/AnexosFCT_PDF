@@ -125,7 +125,7 @@ public class AnexoI {
 
 				documento.add(p8);
 
-				Paragraph p9 = new Paragraph("\nD. " + this.empdata.getNombreemp() + " " + this.empdata.getApellidosemp() +"\ncon NIF " + this.empdata.getNIFEmp() + " como representante legal de la Empresa/Entidad colaboradora " + this.empdata.getNombreCentroemp() + "\ndomiciliada en " + this.empdata.getCiudadEmp(),
+				Paragraph p9 = new Paragraph("\nD. " + this.empdata.getNombreemp() + " " + this.empdata.getApellidosemp() +"\ncon NIF " + this.empdata.getNIFEmp() + " como representante legal de la Empresa/Entidad colaboradora " + this.empdata.getNombreEmpresa() + "\ndomiciliada en " + this.empdata.getCiudadEmp(),
 						FontFactory.getFont("arial",   // fuente
 						9));
 
