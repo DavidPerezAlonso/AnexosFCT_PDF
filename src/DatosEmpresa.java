@@ -1,10 +1,9 @@
-
 public class DatosEmpresa {
 
-	private String nombreemp;
-	private String apellidosemp;
-	private String NIFEmp;
-	private String NombreCentroemp;
+	private String nombreemp; // Nombre del representante de la empresa
+	private String apellidosemp; // Apellidos del representante de la empresa
+	private String NIFEmp; // NIF del representante de la empresa
+	private String Nombreempresa; // Nombre de la empresa
 	private String CodigoConvenio;
 	private String provinciaemp;
 	private String direccionemp ;
@@ -16,14 +15,14 @@ public class DatosEmpresa {
 
 
 	public DatosEmpresa(String nombreemp, String apellidosemp, String nIFEmp, String CodigoConvenio,
-			String codigoCentroemp, String provinciaemp, String direccionemp, String cPEmp, String cIFEmp,
+			String Nombreempresa, String provinciaemp, String direccionemp, String cPEmp, String cIFEmp,
 			String telefonoEmp, String faxEmp, String ciudadEmp) {
 		super();
 		this.nombreemp = nombreemp;
 		this.apellidosemp = apellidosemp;
-		NIFEmp = nIFEmp;
-		NombreCentroemp = CodigoConvenio;
-		this.CodigoConvenio = codigoCentroemp;
+		this.NIFEmp = nIFEmp;
+		this.Nombreempresa = Nombreempresa;
+		this.CodigoConvenio = CodigoConvenio;
 		this.provinciaemp = provinciaemp;
 		this.direccionemp = direccionemp;
 		CPEmp = cPEmp;
@@ -64,13 +63,13 @@ public class DatosEmpresa {
 	}
 
 
-	public String getNombreCentroemp() {
-		return NombreCentroemp;
+	public String getNombreEmpresa() {
+		return this.Nombreempresa;
 	}
 
 
-	public void setNombreCentroemp(String nombreCentroemp) {
-		NombreCentroemp = nombreCentroemp;
+	public void setNombreEmpresa(String nombreempresa) {
+		this.Nombreempresa = nombreempresa;
 	}
 
 
@@ -80,7 +79,7 @@ public class DatosEmpresa {
 
 
 	public void setCodigoCentroemp(String CodigoConvenio) {
-		CodigoConvenio = CodigoConvenio;
+		this.CodigoConvenio = CodigoConvenio;
 	}
 
 
@@ -110,7 +109,7 @@ public class DatosEmpresa {
 
 
 	public void setCPEmp(String cPEmp) {
-		CPEmp = cPEmp;
+		this.CPEmp = cPEmp;
 	}
 
 
@@ -120,7 +119,7 @@ public class DatosEmpresa {
 
 
 	public void setCIFEmp(String cIFEmp) {
-		CIFEmp = cIFEmp;
+		this.CIFEmp = cIFEmp;
 	}
 
 

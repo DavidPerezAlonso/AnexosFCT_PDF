@@ -1,27 +1,27 @@
-
 public class DatosColegio {
 
 	/* Esta clase sirve para definir un objeto con todos los datos del Centro que se necesitan para
 	 * formatear el Anexo I de FCTs
 	 */
 
-	private String nombre;
-	private String apellidos;
-	private String NIF;
-	private String NombreCentro;
-	private String CodigoCentro;
-	private String provincia;
-	private String direccion;
-	private String CP;
-	private String CIF;
-	private String telefono;
-	private String fax;
-	private String ciudad;
+	private String nombre; // Nombre director/a del Centro
+	private String apellidos; // Apellidos director/a del Centro
+	private String NIF; // NIF director/a del Centro
+	private String NombreCentro; // Nombre del Centro
+	private String CodigoCentro; // Código del Centro
+	private String provincia; // Provincia de ubicacion del Centro
+	private String direccion; // Dirección de ubicacion del Centro
+	private String CP; // Código Postal de ubicacion del Centro
+	private String CIF; // CIF del Centro
+	private String telefono; // Telefono del Centro
+	private String fax; // fax del Centro
+	private String ciudad; // ciudad de ubicacion del Centro
+	private String DAT; // Dirección del Area Territorial al que pertenece el Centro
 
 
 
 	public DatosColegio(String nombre, String apellidos, String nIF, String nombreCentro, String codigoCentro,
-			String provincia, String direccion, String cP, String cIF, String telefono, String fax, String ciudad) {
+			String provincia, String direccion, String cP, String cIF, String telefono, String fax, String ciudad, String DAT) {
 		super();
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -35,6 +35,7 @@ public class DatosColegio {
 		this.telefono = telefono;
 		this.fax = fax;
 		this.ciudad = ciudad;
+		this.DAT = DAT;
 	}
 
 	public String getNombre() {
@@ -109,6 +110,15 @@ public class DatosColegio {
 	public void setCiudad(String ciudad) {
 		this.ciudad = ciudad;
 	}
+
+	public String getDAT() {
+		return DAT;
+	}
+
+	public void setDAT(String dAT) {
+		DAT = dAT;
+	}
+
 
 
 }
